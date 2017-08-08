@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4withRSA", "IdentityServer4withRSA\IdentityServer4withRSA.csproj", "{F6B30D9B-D8B5-4233-AC23-31CD8F256377}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{D6C804B7-F69F-4230-8F64-931B902CFF4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{F9FF48AD-E539-4B4A-956E-F2B9907B5EF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4", "IdentityServer4\IdentityServer4.csproj", "{C882BE2A-FB18-4327-BC09-CD1C87FA500D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6B30D9B-D8B5-4233-AC23-31CD8F256377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6B30D9B-D8B5-4233-AC23-31CD8F256377}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6B30D9B-D8B5-4233-AC23-31CD8F256377}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6B30D9B-D8B5-4233-AC23-31CD8F256377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C882BE2A-FB18-4327-BC09-CD1C87FA500D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C882BE2A-FB18-4327-BC09-CD1C87FA500D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C882BE2A-FB18-4327-BC09-CD1C87FA500D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C882BE2A-FB18-4327-BC09-CD1C87FA500D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
