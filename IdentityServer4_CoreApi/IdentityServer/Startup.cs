@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4withRSA
+namespace IdentityServer
 {
     public class Startup
     {

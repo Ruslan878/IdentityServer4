@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CoreApiIdSrv4withRSA
+namespace FirstResourceAPI.Controllers
 {
     [Route("test")]
     [Authorize]

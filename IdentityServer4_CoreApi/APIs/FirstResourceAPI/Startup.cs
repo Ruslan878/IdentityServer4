@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace CoreApiIdSrv4withRSA
+namespace FirstResourceAPI
 {
     public class Startup
     {
@@ -24,8 +24,9 @@ namespace CoreApiIdSrv4withRSA
                 Authority = "http://localhost:5001",
                 RequireHttpsMetadata = false,
 
-                ApiName = "api",
-                ApiSecret = "secret"
+                ApiName = "First Resource Api",
+
+                ApiSecret = "fc0c80051ef5337d158433c4d1de088269093236"
             });
 
             app.UseMvc();

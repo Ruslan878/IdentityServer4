@@ -21,7 +21,7 @@ namespace TestClient
                     new Api
                     {
                         Description = "ASP.NET Core (JWT)",
-                        ClientId = "client",
+                        ClientId = "cmd client",
                         Url = "http://localhost:5051"
                     }
                 }
@@ -56,8 +56,8 @@ namespace TestClient
 
         private static async Task<string> GetToken(string endpoint, string clientId)
         {
-            var tokenClient = new TokenClient(endpoint, clientId, "secret");
-            var response = await tokenClient.RequestClientCredentialsAsync("api");
+            var tokenClient = new TokenClient(endpoint, clientId, "cmd client secret");
+            var response = await tokenClient.RequestClientCredentialsAsync("Core Api");
 
             if (response.IsError)
             {

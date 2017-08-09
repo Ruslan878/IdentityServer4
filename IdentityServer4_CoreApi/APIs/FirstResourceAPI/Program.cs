@@ -1,20 +1,23 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using System;
 
-namespace IdentityServer4withRSA
+namespace FirstResourceAPI
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Console.Title = "IdentityServer4 using RSA";
-
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseUrls("http://localhost:5001")
+                .UseUrls("http://localhost:5051")
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseApplicationInsights()
                 .Build();
 
             host.Run();
