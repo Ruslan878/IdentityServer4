@@ -24,9 +24,9 @@ namespace FirstResourceAPI
                 Authority = "http://localhost:5001",
                 RequireHttpsMetadata = false,
 
-                ApiName = "First Resource Api",
+                ApiName = "First_Resource_API",
 
-                ApiSecret = "fc0c80051ef5337d158433c4d1de088269093236"
+                ApiSecret = "secret"
             });
 
             app.UseMvc();

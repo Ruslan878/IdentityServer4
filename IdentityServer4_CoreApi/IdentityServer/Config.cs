@@ -9,9 +9,9 @@ namespace IdentityServer
         {
             return new List<ApiResource>
             {
-                new ApiResource("First Resource Api", "First Resource .Net Core Api")
+                new ApiResource("First_Resource_API", "First Resource .Net Core Api")
                 {
-                    ApiSecrets = { new Secret("fc0c80051ef5337d158433c4d1de088269093236".Sha256()) }
+                    ApiSecrets = { new Secret("secret".Sha256()) }
                 }
             };
         }
@@ -22,13 +22,23 @@ namespace IdentityServer
             {
                 new Client
                 {
-                    ClientId = "cmd client",
-                    ClientSecrets = { new Secret("cmd client secret".Sha256()) },
+                    ClientId = "cmd_client",
+                    ClientSecrets = { new Secret("secret".Sha256()) },
 
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    AllowedScopes = { "First Resource Api" },
+                    AllowedScopes = { "First_Resource_API" }
 
-                    AccessTokenType = AccessTokenType.Jwt
+                    //AccessTokenType = AccessTokenType.Jwt
+                },
+                new Client
+                {
+                    ClientId = "js_oauth",
+                    ClientSecrets = { new Secret("secret".Sha256()) },
+
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    AllowedScopes = { "First_Resource_API" }
+
+                    //AccessTokenType = AccessTokenType.Jwt
                 }
             };
         }
