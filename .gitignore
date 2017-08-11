@@ -2,5 +2,7 @@
 **/bin/*
 **/obj/*
 **/node_modules/*
+**/wwwroot/lib/*
 *.user
 *.pubxml
+IdentityServer4_CoreApi/Clients/MvcClient/MvcClient.Web/Properties/launchSettings.json
